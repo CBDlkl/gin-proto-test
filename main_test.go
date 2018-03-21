@@ -12,6 +12,9 @@ import (
 	"encoding/json"
 )
 
+// protoc build code =>
+// protoc HouseContractListInput.proto HouseContractListOutput.proto --go_out=../
+
 func TestProtoMarshal(t *testing.T) {
 	router := setupRouter()
 	w := httptest.NewRecorder()
