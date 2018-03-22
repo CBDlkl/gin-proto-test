@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/CBDlkl/gin"
-	"ginApi/example"
+	"gin-proto-test/example"
 )
 
 func setupRouter() *gin.Engine {
@@ -12,7 +12,7 @@ func setupRouter() *gin.Engine {
 		var input example.HouseContractListInput
 		context.Bind(&input)
 
-		contracts := [] *example.HouseContractListDto{}
+		var contracts [] *example.HouseContractListDto
 		contracts = append(contracts, new(example.HouseContractListDto))
 		contracts = append(contracts, new(example.HouseContractListDto))
 

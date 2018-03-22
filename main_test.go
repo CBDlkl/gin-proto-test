@@ -5,11 +5,11 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"ginApi/example"
 	"github.com/golang/protobuf/proto"
 	"bytes"
 	"github.com/stretchr/testify/assert"
 	"encoding/json"
+	"gin-proto-test/example"
 )
 
 // protoc build code =>
